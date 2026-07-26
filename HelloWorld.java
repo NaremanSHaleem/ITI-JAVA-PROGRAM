@@ -49,21 +49,21 @@ class HelloWorld {
         }
     }
 
-//    public static int binarySearch(int[] arr, int target) {
-//        int start = 0;
-//        int end = arr.length - 1;
-//        while (start <= end) {
-//            int mid = start + (end - start) / 2;
-//            if (arr[mid] == target) {
-//                return mid;
-//            }
-//            if (arr[mid] < target) {
-////                left = mid + 1;
-//            } else {
-////                right = mid - 1;
-//            }
-//        }
-//        //return -1; // TO DO;
-//    }
+    public static int binarySearch(int[] arr, int target) {
+        int start = 0;
+        int end = arr.length - 1;
+        while (start <= end) {
+            int mid = start + (end - start) / 2;
+            if (arr[mid] == target) {
+                return mid;
+            }
+            if (arr[mid] < target) {
+                start = mid + 1;
+            } else {
+                end = mid - 1;
+            }
+        }
+        return -1;
+    }
 
 }
